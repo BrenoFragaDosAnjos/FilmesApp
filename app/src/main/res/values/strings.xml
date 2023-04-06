@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FilmesApp</string>
+    <string name="avaliacao">Avaliação:</string>
+    <string name="popularidade">Popularidade:</string>
+    <string name="linguagem">Linguagem:</string>
+    <string name="duracao">Duração:</string>
+    <string name="filme_image">filme image</string>
+    <string name="adulto">Adulto:</string>
+    <string name="logo">logo</string>
+</resources>

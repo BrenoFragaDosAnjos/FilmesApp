@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232323"
+    tools:context=".ui.FilmeDesc">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/filme_image" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/img"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/adulto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adulto"
+        app:layout_constraintStart_toStartOf="@id/desc"
+        app:layout_constraintTop_toBottomOf="@id/desc"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#eead2d"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/duracao_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/adulto"
+        app:layout_constraintTop_toBottomOf="@id/desc"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/linguagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/linguagem"
+        app:layout_constraintStart_toStartOf="@id/desc"
+        app:layout_constraintTop_toBottomOf="@id/adulto"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#eead2d"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/linguagem_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/linguagem"
+        app:layout_constraintTop_toBottomOf="@id/adulto"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/popularidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popularidade"
+        app:layout_constraintStart_toStartOf="@id/desc"
+        app:layout_constraintTop_toBottomOf="@id/linguagem"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#eead2d"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/popularidade_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/popularidade"
+        app:layout_constraintTop_toBottomOf="@id/linguagem"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/avaliacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/avaliacao"
+        app:layout_constraintStart_toStartOf="@id/desc"
+        app:layout_constraintTop_toBottomOf="@id/popularidade"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#eead2d"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/avaliacao_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/avaliacao"
+        app:layout_constraintTop_toBottomOf="@id/popularidade"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
