@@ -1,28 +1,28 @@
 # Filmes App
 
-Native Android application built with Kotlin that consumes the TMDB REST API and presents movie information using an MVVM architecture.
+Aplicativo Android nativo desenvolvido em Kotlin que consome a API REST do TMDB e apresenta informações de filmes utilizando arquitetura MVVM.
 
 <p align="center">
-  <img alt="Movies list" width="30%" src="screenshots/Screenshot_20230406_191838.png"/>
-  <img alt="Movie screen" width="30%" src="screenshots/Screenshot_20230406_191904.png"/>
-  <img alt="Movie details" width="30%" src="screenshots/Screenshot_20230406_191915.png"/>
+  <img alt="Lista de filmes" width="30%" src="screenshots/Screenshot_20230406_191838.png"/>
+  <img alt="Tela de filme" width="30%" src="screenshots/Screenshot_20230406_191904.png"/>
+  <img alt="Detalhes do filme" width="30%" src="screenshots/Screenshot_20230406_191915.png"/>
 </p>
 
-## Overview
+## Visão geral
 
-The project was created to demonstrate native Android development, REST API consumption, asynchronous data loading, and separation of responsibilities using MVVM and Repository patterns.
+O projeto foi criado para demonstrar conhecimentos em desenvolvimento Android nativo, consumo de APIs REST, carregamento assíncrono de dados e separação de responsabilidades utilizando os padrões MVVM e Repository.
 
-## Main features
+## Principais funcionalidades
 
-- dynamic movie listing from TMDB;
-- remote image loading and caching;
-- movie details screen;
-- RecyclerView-based list rendering;
-- ViewModel state management;
-- LiveData communication between ViewModel and UI;
-- API communication through Retrofit and OkHttp.
+- listagem dinâmica de filmes através do TMDB;
+- carregamento remoto e cache de imagens;
+- tela de detalhes do filme;
+- renderização da lista com RecyclerView;
+- gerenciamento de estado com ViewModel;
+- comunicação entre ViewModel e interface com LiveData;
+- integração com API utilizando Retrofit e OkHttp.
 
-## Architecture
+## Arquitetura
 
 ```text
 View
@@ -37,9 +37,9 @@ Repository
 TMDB REST API
 ```
 
-The application uses **MVVM** with a Repository layer to isolate data-access responsibilities from the Android UI.
+A aplicação utiliza **MVVM** com uma camada Repository para separar o acesso aos dados da lógica da interface Android.
 
-## Tech stack
+## Tecnologias utilizadas
 
 - Kotlin
 - Android SDK
@@ -53,35 +53,35 @@ The application uses **MVVM** with a Repository layer to isolate data-access res
 - Glide
 - TMDB API
 
-## Minimum Android version
+## Versão mínima do Android
 
-Minimum SDK: **API 31+**
+SDK mínimo: **API 31+**
 
-## Demo
+## Demonstração
 
 <p align="center">
-  <img src="screenshots/gif1.gif" width="25%" alt="Application demo"/>
+  <img src="screenshots/gif1.gif" width="25%" alt="Demonstração do aplicativo"/>
 </p>
 
 ## APK
 
-A debug APK is available in the `apk/` directory for demonstration purposes.
+Um APK de debug está disponível no diretório `apk/` para demonstração.
 
-## Repository structure
+## Estrutura do repositório
 
-The project follows a standard Android/Gradle layout with application code under `app/`, project build configuration at the root, and visual assets under `screenshots/`.
+O projeto segue a estrutura padrão de um aplicativo Android com Gradle, com o código da aplicação em `app/`, arquivos de build na raiz e recursos visuais em `screenshots/`.
 
-## What this project demonstrates
+## Competências demonstradas
 
-- Android application architecture;
-- API integration;
-- separation of UI and data logic;
-- list rendering;
-- image caching;
-- navigation between screens;
-- Gradle-based project organization.
+- arquitetura de aplicações Android;
+- integração com APIs;
+- separação entre interface e acesso a dados;
+- renderização eficiente de listas;
+- cache e carregamento de imagens;
+- navegação entre telas;
+- organização de projeto com Gradle.
 
-## License
+## Licença
 
 Apache License 2.0.
 
